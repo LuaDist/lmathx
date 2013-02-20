@@ -1,0 +1,28 @@
+type = "x86"
+arch = "Windows"
+author = "Luiz Henrique de Figueiredo"
+depends = {
+[[lua ~> 5.1]],
+}
+
+desc = "This code extends the Lua math library with the functions available in C99."
+version = "5.1"
+maintainer = "Peter Kapec"
+files = {
+Runtime = {
+[[lib\lua\mathx.dll]],
+}
+,
+Data = {
+[[share\lmathx\README]],
+}
+,
+Test = {
+[[share\lmathx\test\test.lua]],
+}
+,
+}
+
+license = "Public domain"
+name = "lmathx"
+url = "http://www.tecgraf.puc-rio.br/~lhf/ftp/lua/#lmathx"
